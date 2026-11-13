@@ -437,7 +437,7 @@ var TI=0;function closeM(){EXON=0;clearInterval(TI);$('ov').classList.remove('on
 $('ov').onclick=function(e){if(e.target===this)closeM()};
 /* সাইটের কনটেন্ট (Firestore) */
 var CV=3;var KEYS=['name','wa','fb','yt','homeVideo','bkash','nagad','price','trialDays','courses'];
-function applyContent(j){try{var c=JSON.parse(j);if(c.cfg)KEYS.forEach(function(k){if(c.cfg[k]!==undefined&&!(k==='name'&&c.cfg[k]==='ডিপ্লোমা টু ডুয়েট'))CFG[k]=c.cfg[k]});if(c.books&&c.books.length&&(c.v||0)>=CV)D=c.books;fixK()}catch(e){}}
+function applyContent(j){try{var c=JSON.parse(j);if(c.cfg)KEYS.forEach(function(k){if(c.cfg[k]!==undefined&&!(k==='name'&&c.cfg[k]==='ডুয়েট ভর্তি প্রস্তুতি (Updated)'))CFG[k]=c.cfg[k]});if(c.books&&c.books.length&&(c.v||0)>=CV)D=c.books;fixK()}catch(e){}}
 function saveSite(msg){var cf={};KEYS.forEach(function(k){cf[k]=CFG[k]});
 return FB.d.collection('site').doc('content').set({json:JSON.stringify({v:CV,cfg:cf,books:D}),at:Date.now()}).then(function(){foot();if($('am'))$('am').textContent=msg||'সেভ হয়েছে।';$('am')&&($('am').style.color='var(--ok)')}).catch(function(){if($('am')){$('am').textContent='সেভ হয়নি। এডমিন ইমেইল ও Firestore Rules ঠিক আছে কি না দেখুন।';$('am').style.color='var(--bad)'}})}
 /* ব্যবহারকারী */
