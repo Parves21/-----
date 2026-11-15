@@ -1,0 +1,25 @@
+/* ===== ধাপ ৬: ফুটার — সাইটের প্যালেটে (নেভি + সোনালি) ===== */
+.ft2{position:relative;overflow:hidden;background:radial-gradient(900px 420px at 16% 0%,rgba(242,194,48,.10) 0%,transparent 60%),linear-gradient(180deg,#0E1E33 0%,#12263F 55%,#0A1728 100%);color:var(--oh);padding:64px 0 0;margin-top:40px;text-align:left}
+.fmesh{position:absolute;left:0;right:0;bottom:0;width:100%;height:240px;pointer-events:none;opacity:.4;animation:mpulse 6s ease-in-out infinite}
+@keyframes mpulse{50%{opacity:.62}}
+.fg3{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:48px;padding-bottom:110px}
+.ft2 .fc h4{color:var(--ac);font-size:19px;margin:0 0 18px}
+.ft2 .fc p{color:var(--oh);margin:0 0 12px}
+.ft2 .fc a:not(.bt),.ft2 .fc button{display:block;background:none;border:0;color:var(--hm);padding:6px 0;cursor:pointer;text-align:left;font:inherit;text-decoration:none;transition:color .2s,transform .2s}
+.ft2 .fc button:hover,.ft2 .fc a:not(.bt):hover{color:var(--ac);transform:translateX(4px)}
+.ft2 .so{display:flex;gap:12px;margin:0}
+.ft2 .so a{display:grid;place-items:center;width:42px;height:42px;padding:0;border-radius:50%;border:1.5px solid var(--hm);color:var(--oh);transition:.25s}
+.ft2 .so a:hover{background:var(--ac);color:var(--oa);border-color:var(--ac);transform:translateY(-4px)}
+.ft2 .fc button.appb{display:inline-block;border:1.5px solid var(--hm);background:rgba(255,255,255,.06);color:var(--oh);border-radius:12px;padding:12px 16px;transform:none}
+.ft2 .fc button.appb:hover{border-color:var(--ac);color:var(--ac);transform:none}
+/* অ্যাপ স্টোর বাটন */
+.strow{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.stbtn{display:inline-flex!important;align-items:center;gap:9px;background:rgba(255,255,255,.06)!important;border:1.5px solid var(--hm)!important;border-radius:11px;padding:9px 14px!important;color:var(--oh)!important;transition:.22s;text-decoration:none!important;line-height:1.25}
+.stbtn:hover{border-color:var(--ac)!important;background:rgba(242,194,48,.12)!important;transform:translateY(-3px)!important}
+.stbtn svg{flex:none}
+.stbtn b{display:block;font-size:13px;font-weight:700;line-height:1.3}
+.stbtn span{display:block;font-size:10.5px;color:var(--hm);line-height:1.3}
+.fcp{position:relative;z-index:1;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;align-items:center;color:var(--hm);padding:0 16px 24px;font-size:15px}
+.fcp button{background:none;border:1px solid var(--hm);color:var(--oh);border-radius:99px;padding:3px 14px;cursor:pointer;opacity:0;transition:opacity .3s}
+.fcp button:hover{border-color:var(--ac);color:var(--ac)}
+@media (max-width:760px){.fg3{grid-template-columns:1fr;gap:30px;padding-bottom:90px}.fcp button{opacity:1}}

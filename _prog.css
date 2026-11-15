@@ -1,0 +1,19 @@
+/* ===== ধাপ ৫: প্রগ্রেস কার্ড ===== */
+.pcd{background:var(--sf);border:1.5px solid var(--ln);border-radius:16px;padding:22px;display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+@media (max-width:720px){.pcd{flex-direction:column;text-align:center;gap:18px}}
+.pring{flex:none;width:150px;height:150px;position:relative}
+.pring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.pring circle{fill:none;stroke-width:12;stroke-linecap:round}
+.pring .bg{stroke:var(--ln)}
+.pring .fg{stroke:var(--ac);transition:stroke-dashoffset .8s}
+.pring .fg2{stroke:var(--ok)}
+.pring .mid{position:absolute;inset:0;display:grid;place-items:center;text-align:center;line-height:1.3}
+.pring .mid b{display:block;font-size:32px;font-weight:700;color:var(--ink)}
+.pring .mid span{font-size:13px;color:var(--mu)}
+.pcl{flex:1;min-width:240px}
+.pcl h3{margin:0 0 4px;font-size:21px}
+.pcl>p{margin:0 0 16px;color:var(--mu);font-size:15px}
+.plst{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+.plst div{background:var(--bg);border:1.5px solid var(--ln);border-radius:10px;padding:10px 12px}
+.plst b{display:block;font-size:21px;font-weight:700;color:var(--ink);line-height:1.3}
+.plst span{font-size:13.5px;color:var(--mu)}

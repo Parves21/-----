@@ -216,22 +216,6 @@ img.avc{object-fit:cover}
 .mq2{font-size:46px;line-height:1;color:var(--ac);display:block;animation:fl 5s ease-in-out infinite}
 .mv.win{background:linear-gradient(135deg,#0f6b46,#17a46e)}
 @keyframes glowb{50%{box-shadow:0 0 28px rgba(242,194,48,.35)}}
-.ft2{position:relative;overflow:hidden;background:radial-gradient(900px 420px at 18% 0%,#3d1670 0%,transparent 62%),linear-gradient(180deg,#14072a 0%,#1a0a30 55%,#09030f 100%);color:#efe7fa;padding:72px 0 0;margin-top:40px;text-align:left}
-.fmesh{position:absolute;left:0;right:0;bottom:0;width:100%;height:240px;pointer-events:none;opacity:.5;animation:mpulse 6s ease-in-out infinite}
-@keyframes mpulse{50%{opacity:.8}}
-.fg3{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:48px;padding-bottom:110px}
-.ft2 .fc h4{color:#e9d9ff;font-size:19px;margin:0 0 18px}
-.ft2 .fc p{color:#efe7fa;margin:0 0 12px}
-.ft2 .fc a:not(.bt),.ft2 .fc button{display:block;background:none;border:0;color:#efe7fa;padding:6px 0;cursor:pointer;text-align:left;font:inherit;text-decoration:none;transition:color .2s,transform .2s}
-.ft2 .fc button:hover,.ft2 .fc a:not(.bt):hover{color:#ffd452;transform:translateX(4px)}
-.ft2 .so{display:flex;gap:12px;margin:0}
-.ft2 .so a{display:grid;place-items:center;width:42px;height:42px;padding:0;border-radius:50%;border:1.5px solid #9a6bd6;color:#efe7fa;transition:.25s}
-.ft2 .so a:hover{background:#ffd452;color:#1a0a30;border-color:#ffd452;transform:translateY(-4px)}
-.ft2 .fc button.appb{display:inline-block;border:1.5px solid #9a6bd6;background:#0b0414;color:#fff;border-radius:12px;padding:12px 16px;transform:none}
-.ft2 .fc button.appb:hover{border-color:#ffd452;color:#ffd452;transform:none}
-.fcp{position:relative;z-index:1;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;align-items:center;color:#c9aef0;padding:0 16px 24px;font-size:15px}
-.fcp button{background:none;border:1px solid #9a6bd6;color:#efe7fa;border-radius:99px;padding:3px 14px;cursor:pointer;opacity:0;transition:opacity .3s}
-@media (max-width:760px){.fg3{grid-template-columns:1fr;gap:30px;padding-bottom:90px}.fcp button{opacity:1}}
 /* ===== ধাপ ১: আইকন, লোগো, নোটিশ ===== */
 .ic{display:block;flex:none}
 .bs svg.lg{height:40px;width:auto;display:block}
@@ -314,6 +298,98 @@ img.avc{object-fit:cover}
 .avd{display:inline-block;width:18px;border-top:2px dashed var(--ok);vertical-align:middle;margin-right:4px}
 .cht{width:100%;height:auto;display:block}.cht .gl{stroke:var(--ln);stroke-width:1}.cht .al{fill:var(--mu);font-size:12px}.cht .bar{fill:var(--ac);transition:opacity .2s}.cht .bar.td{fill:var(--ink)}.cht .bar:hover{opacity:.75}.cht .avl{stroke:var(--ok);stroke-width:1.5;stroke-dasharray:5 4}
 @media (max-width:860px){.rpg{grid-template-columns:1fr}}
+/* ===== ধাপ ৪: কোর্স লার্নিং পেজ ===== */
+.clp{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:22px;align-items:start}
+@media (max-width:980px){.clp{grid-template-columns:1fr}}
+.clv{background:var(--sf);border:1.5px solid var(--ln);border-radius:14px;overflow:hidden}
+.clv iframe{width:100%;aspect-ratio:16/9;border:0;display:block;background:#000}
+.clvb{aspect-ratio:16/9;display:grid;place-items:center;text-align:center;color:var(--mu);padding:24px;gap:10px;align-content:center}
+.clvb b{color:var(--ink);font-size:20px;display:block}
+.clvd{padding:16px 18px;border-top:1.5px solid var(--ln)}
+.clvd h3{margin:0 0 6px;font-size:21px}
+.clvd p{margin:0 0 12px;color:var(--mu);font-size:16px}
+.clvact{display:flex;gap:10px;flex-wrap:wrap}
+.clvact .bt.g{color:var(--mu);border-color:var(--ln)}
+.cly{background:var(--sf);border:1.5px solid var(--ln);border-radius:14px;overflow:hidden;position:sticky;top:78px}
+@media (max-width:980px){.cly{position:static}}
+.clyh{padding:16px 18px;border-bottom:1.5px solid var(--ln)}
+.clyh h3{margin:0 0 4px;font-size:19px}
+.clyh p{margin:0 0 12px;color:var(--mu);font-size:15px}
+.clyp{display:flex;justify-content:space-between;font-size:15px;color:var(--mu);margin-bottom:6px}
+.clyp b{color:var(--ink)}
+.clpg{height:7px;background:var(--ln);border-radius:9px;overflow:hidden;margin-bottom:4px}
+.clpg i{display:block;height:100%;background:var(--ac);width:0;transition:width .5s}
+.clyl{max-height:min(62vh,560px);overflow-y:auto;padding:8px}
+.clyl::-webkit-scrollbar{width:8px}
+.clyl::-webkit-scrollbar-thumb{background:var(--ln);border-radius:9px}
+.clgrp{border-bottom:1px solid var(--ln)}
+.clgrp:last-child{border-bottom:0}
+.clgt{width:100%;display:flex;align-items:center;gap:10px;background:none;border:0;padding:12px 10px;cursor:pointer;font:inherit;color:var(--ink);text-align:left}
+.clgt:hover{background:var(--bg)}
+.clgt b{flex:1;font-size:16px;font-weight:600}
+.clgt em{font-style:normal;font-size:13px;color:var(--mu)}
+.clgt .car{transition:transform .25s;flex:none;color:var(--mu)}
+.clgrp.open .clgt .car{transform:rotate(180deg)}
+.clgl{display:none;padding:2px 0 10px}
+.clgrp.open .clgl{display:block}
+.clli{display:flex;gap:10px;align-items:center;width:100%;background:none;border:0;padding:9px 10px 9px 14px;cursor:pointer;font:inherit;color:var(--ink);text-align:left;border-left:3px solid transparent}
+.clli:hover{background:var(--bg)}
+.clli.on{background:color-mix(in srgb,var(--ac) 15%,var(--sf));border-left-color:var(--ac)}
+.clli.done .clst{color:var(--ok)}
+.clli.on .clst{color:var(--ac)}
+.clli b{flex:1;font-size:15px;font-weight:500;line-height:1.45}
+.clli.done b{color:var(--mu)}
+.clst{flex:none;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;border:1.5px solid var(--ln);color:var(--mu)}
+.clli.done .clst{border-color:var(--ok)}
+.cllk{flex:none;color:var(--mu);opacity:.6}
+.clnav{display:flex;justify-content:space-between;gap:10px;margin-top:16px;flex-wrap:wrap}
+.clnav .bt{flex:1;min-width:130px}
+.clem{max-height:min(62vh,560px);overflow-y:auto}
+/* ===== ধাপ ৫: প্রগ্রেস কার্ড ===== */
+.pcd{background:var(--sf);border:1.5px solid var(--ln);border-radius:16px;padding:22px;display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+@media (max-width:720px){.pcd{flex-direction:column;text-align:center;gap:18px}}
+.pring{flex:none;width:150px;height:150px;position:relative}
+.pring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.pring circle{fill:none;stroke-width:12;stroke-linecap:round}
+.pring .bg{stroke:var(--ln)}
+.pring .fg{stroke:var(--ac);transition:stroke-dashoffset .8s}
+.pring .fg2{stroke:var(--ok)}
+.pring .mid{position:absolute;inset:0;display:grid;place-items:center;text-align:center;line-height:1.3}
+.pring .mid b{display:block;font-size:32px;font-weight:700;color:var(--ink)}
+.pring .mid span{font-size:13px;color:var(--mu)}
+.pcl{flex:1;min-width:240px}
+.pcl h3{margin:0 0 4px;font-size:21px}
+.pcl>p{margin:0 0 16px;color:var(--mu);font-size:15px}
+.plst{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+.plst div{background:var(--bg);border:1.5px solid var(--ln);border-radius:10px;padding:10px 12px}
+.plst b{display:block;font-size:21px;font-weight:700;color:var(--ink);line-height:1.3}
+.plst span{font-size:13.5px;color:var(--mu)}
+/* ===== ধাপ ৬: ফুটার — সাইটের প্যালেটে (নেভি + সোনালি) ===== */
+.ft2{position:relative;overflow:hidden;background:radial-gradient(900px 420px at 16% 0%,rgba(242,194,48,.10) 0%,transparent 60%),linear-gradient(180deg,#0E1E33 0%,#12263F 55%,#0A1728 100%);color:var(--oh);padding:64px 0 0;margin-top:40px;text-align:left}
+.fmesh{position:absolute;left:0;right:0;bottom:0;width:100%;height:240px;pointer-events:none;opacity:.4;animation:mpulse 6s ease-in-out infinite}
+@keyframes mpulse{50%{opacity:.62}}
+.fg3{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:48px;padding-bottom:110px}
+.ft2 .fc h4{color:var(--ac);font-size:19px;margin:0 0 18px}
+.ft2 .fc p{color:var(--oh);margin:0 0 12px}
+.ft2 .fc a:not(.bt),.ft2 .fc button{display:block;background:none;border:0;color:var(--hm);padding:6px 0;cursor:pointer;text-align:left;font:inherit;text-decoration:none;transition:color .2s,transform .2s}
+.ft2 .fc button:hover,.ft2 .fc a:not(.bt):hover{color:var(--ac);transform:translateX(4px)}
+.ft2 .so{display:flex;gap:12px;margin:0}
+.ft2 .so a{display:grid;place-items:center;width:42px;height:42px;padding:0;border-radius:50%;border:1.5px solid var(--hm);color:var(--oh);transition:.25s}
+.ft2 .so a:hover{background:var(--ac);color:var(--oa);border-color:var(--ac);transform:translateY(-4px)}
+.ft2 .fc button.appb{display:inline-block;border:1.5px solid var(--hm);background:rgba(255,255,255,.06);color:var(--oh);border-radius:12px;padding:12px 16px;transform:none}
+.ft2 .fc button.appb:hover{border-color:var(--ac);color:var(--ac);transform:none}
+/* অ্যাপ স্টোর বাটন */
+.strow{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.stbtn{display:inline-flex!important;align-items:center;gap:9px;background:rgba(255,255,255,.06)!important;border:1.5px solid var(--hm)!important;border-radius:11px;padding:9px 14px!important;color:var(--oh)!important;transition:.22s;text-decoration:none!important;line-height:1.25}
+.stbtn:hover{border-color:var(--ac)!important;background:rgba(242,194,48,.12)!important;transform:translateY(-3px)!important}
+.stbtn svg{flex:none}
+.stbtn b{display:block;font-size:13px;font-weight:700;line-height:1.3}
+.stbtn span{display:block;font-size:10.5px;color:var(--hm);line-height:1.3}
+.fcp{position:relative;z-index:1;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;align-items:center;color:var(--hm);padding:0 16px 24px;font-size:15px}
+.fcp button{background:none;border:1px solid var(--hm);color:var(--oh);border-radius:99px;padding:3px 14px;cursor:pointer;opacity:0;transition:opacity .3s}
+.fcp button:hover{border-color:var(--ac);color:var(--ac)}
+@media (max-width:760px){.fg3{grid-template-columns:1fr;gap:30px;padding-bottom:90px}.fcp button{opacity:1}}
+
 </style>
 </head>
 <body>
@@ -325,10 +401,16 @@ img.avc{object-fit:cover}
 <div id="app"></div>
 <nav class="bn" id="bn" aria-label="প্রধান মেনু"></nav>
 <button class="bt ins" id="ins">📲 অ্যাপ ইনস্টল করুন</button>
-<footer class="ft2" id="ft"><svg id="fm" class="fmesh" viewBox="0 0 1600 240" preserveAspectRatio="none" fill="none" stroke="#b44fe0" stroke-width="1" aria-hidden="true"></svg><div class="w"><div class="fg3">
+<footer class="ft2" id="ft"><svg id="fm" class="fmesh" viewBox="0 0 1600 240" preserveAspectRatio="none" fill="none" stroke="rgba(242,194,48,.55)" stroke-width="1" aria-hidden="true"></svg><div class="w"><div class="fg3">
 <div class="fc"><h4>যোগাযোগ</h4><p><b id="fbn"></b></p><p>📍 ডুয়েট এলাকা, গাজীপুর</p><p>💬যোগাযোগ: <a id="fw" target="_blank" rel="noopener"></a></p><p>📞 হেল্পলাইন: <span id="fh"></span></p></div>
 <div class="fc"><h4>প্রয়োজনীয় লিংক</h4><button data-v="books">বই</button><button data-v="mcq">এমসিকিউ পরীক্ষা</button><button data-v="cq">সিকিউ পরীক্ষা</button><button data-v="course">কোর্স</button><button data-v="profile">প্রোফাইল ও লিডারবোর্ড</button><button data-v="privacy">গোপনীয়তা নীতি</button><button data-v="terms">শর্তাবলি</button></div>
-<div class="fc"><h4>আমাদের ফলো করুন</h4><div class="so"><a id="sf" target="_blank" rel="noopener" aria-label="ফেসবুক"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a id="sy" target="_blank" rel="noopener" aria-label="ইউটিউব"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a id="sw2" target="_blank" rel="noopener" aria-label="হোয়াটসঅ্যাপ"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.39c0-4.54 3.7-8.24 8.25-8.24s8.24 3.7 8.24 8.24-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29z"/></svg></a></div><h4 style="margin-top:26px">অ্যাপ নিন</h4><button class="appb" id="fi">📲 ফোনের হোম স্ক্রিনে ইনস্টল করুন</button></div>
+<div class="fc"><h4>আমাদের ফলো করুন</h4><div class="so"><a id="sf" target="_blank" rel="noopener" aria-label="ফেসবুক"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a id="sy" target="_blank" rel="noopener" aria-label="ইউটিউব"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a id="sw2" target="_blank" rel="noopener" aria-label="হোয়াটসঅ্যাপ"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.39c0-4.54 3.7-8.24 8.25-8.24s8.24 3.7 8.24 8.24-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29z"/></svg></a></div><h4 style="margin-top:26px">অ্যাপ নিন</h4>
+<div class="strow">
+<a class="stbtn" id="apG" target="_blank" rel="noopener" aria-label="Google Play Store-তে পাওয়া যাবে"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.1 2.1 0 0 1-.03-.18V2c0 .061.012.121.03.18zm12.775 8.72L5.322 3.466l9.44 6.356 1.622 1.113zm.702 2.34l-1.622-1.113-9.44-6.356 11.062 7.47zm3.986-2.62a1.5 1.5 0 0 1 0-2.19l-1.72-1.16-2.203 1.502 2.203 1.502 1.72-1.16zM16.36 20.008l-11.038-7.47 9.44-6.355 1.598 1.073-9.44 6.356 9.44 6.396z"/></svg><span><b>GET IT ON</b><span>Google Play</span></span></a>
+<a class="stbtn" id="apA" target="_blank" rel="noopener" aria-label="App Store-এ পাওয়া যাবে"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.05 12.536c-.03-2.86 2.33-4.24 2.44-4.31-1.33-1.95-3.4-2.22-4.14-2.25-1.76-.18-3.44 1.04-4.33 1.04-.9 0-2.27-1.02-3.74-1-1.92.03-3.7 1.12-4.69 2.84-2 3.47-.51 8.6 1.44 11.41.95 1.38 2.09 2.93 3.59 2.87 1.44-.06 1.99-.93 3.73-.93s2.23.93 3.76.9c1.55-.03 2.53-1.4 3.47-2.79 1.09-1.6 1.54-3.15 1.56-3.23-.03-.02-3-1.15-3.03-4.55zM14.28 4.06c.79-.96 1.33-2.3 1.18-3.63-1.14.05-2.53.76-3.35 1.72-.73.85-1.38 2.21-1.2 3.52 1.27.1 2.57-.65 3.37-1.61z"/></svg><span><b>Download on the</b><span>App Store</span></span></a>
+<a class="stbtn" id="apM" target="_blank" rel="noopener" aria-label="Microsoft Store-এ পাওয়া যাবে"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M1 1h10v22H1zM13 1h8.7v11.1H13zM13 13.9h8.7V23H13zM1 13.9h10V23H1z"/></svg><span><b>Get it from</b><span>Microsoft</span></span></a>
+</div>
+<button class="appb" id="fi" style="margin-top:12px">📲 ফোনের হোম স্ক্রিনে ইনস্টল করুন</button></div>
 </div></div><div class="fcp"><span id="fn"></span><button id="up">↑ উপরে যান</button></div></footer>
 <a class="fab" id="fab" target="_blank" rel="noopener" aria-label="হোয়াটসঅ্যাপে কথা বলুন">💬</a>
 <div class="ov" id="ov"><div class="md" id="md"></div></div>
@@ -339,7 +421,7 @@ var CFG={
  name:"ডুয়েট ভর্তি প্রস্তুতি",wa:"01577533674",
  fb:"https://www.facebook.com/PrivateStudyZone",yt:"https://www.youtube.com/@PrivateStudyZone",
  homeVideo:"https://www.youtube.com/@PrivateStudyZone",
- trialDays:30,price:20,bkash:"01343340904",nagad:"01343340904",
+ trialDays:30,price:20,bkash:"01343340904",nagad:"01343340904",playStore:"",appStore:"",msStore:"",
  courses:[["PSZ: সব কোর্স","https://privatestudyzone.com/Course/AllCourses","ডুয়েট ভর্তি ও পলিটেকনিকের কোর্স"],["DUET Admission Trigonometry Full Course","https://privatestudyzone.com/Course/Details/773898c7-89fc-489d-b0ef-b13fb657bcd0","ফ্রি কোর্স"],["PSZ ফেসবুক কমিউনিটি","https://www.facebook.com/groups/2664453863793175","ভর্তি প্রস্তুতির আলোচনা"]],
  admin:"nurislam42021@gmail.com",
  appCheckKey:"",
@@ -385,7 +467,7 @@ function bn(n){return Number(n).toLocaleString('bn-BD')}
 function en(s){return s.replace(/[০-৯]/g,function(c){return '০১২৩৪৫৬৭৮৯'.indexOf(c)})}
 function ldJS(u){return new Promise(function(r,j){var s=document.createElement('script');s.src=u;s.onload=r;s.onerror=j;document.head.appendChild(s)})}
 /* ===== নিজস্ব SVG আইকন ও লোগো (বাইরের নির্ভরতা নেই) ===== */
-var ICP={home:'<path d="M3 11l9-8 9 8v10a2 2 0 0 1-2 2h-4v-7H9v7H5a2 2 0 0 1-2-2z"/>',book:'<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/><path d="M20 17v4H6.5A2.5 2.5 0 0 1 4 18.5"/>',mcq:'<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/>',cq:'<path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/>',course:'<circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z"/>',play:'<path d="M5 3l14 9-14 9z"/>',user:'<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',users:'<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',bell:'<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>',search:'<circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>',shield:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',help:'<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>',sun:'<circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>',moon:'<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',out:'<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/>',in:'<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5M15 12H3"/>',plus:'<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/>',x:'<path d="M18 6L6 18M6 6l12 12"/>',right:'<path d="M9 18l6-6-6-6"/>',target:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',lock:'<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',chart:'<path d="M18 20V10M12 20V4M6 20v-6"/>',calendar:'<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',flame:'<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>',clock:'<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',left:'<path d="M15 18l-6-6 6-6"/>',globe:'<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',eye:'<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/>',eyeoff:'<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><path d="M1 1l22 22"/>',ext:'<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14L21 3"/>'};
+var ICP={home:'<path d="M3 11l9-8 9 8v10a2 2 0 0 1-2 2h-4v-7H9v7H5a2 2 0 0 1-2-2z"/>',check:'<path d="M20 6L9 17l-5-5"/>',download:'<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/>',flag:'<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/>',file:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>',book:'<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/><path d="M20 17v4H6.5A2.5 2.5 0 0 1 4 18.5"/>',mcq:'<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/>',cq:'<path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/>',course:'<circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z"/>',play:'<path d="M5 3l14 9-14 9z"/>',user:'<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',users:'<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',bell:'<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>',search:'<circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>',shield:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',help:'<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>',sun:'<circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>',moon:'<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',out:'<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/>',in:'<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5M15 12H3"/>',plus:'<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/>',x:'<path d="M18 6L6 18M6 6l12 12"/>',right:'<path d="M9 18l6-6-6-6"/>',target:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',lock:'<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',chart:'<path d="M18 20V10M12 20V4M6 20v-6"/>',calendar:'<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',flame:'<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>',clock:'<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',left:'<path d="M15 18l-6-6 6-6"/>',globe:'<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',eye:'<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/>',eyeoff:'<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><path d="M1 1l22 22"/>',ext:'<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14L21 3"/>'};
 function ic(n,z){z=z||20;return '<svg class="ic" viewBox="0 0 24 24" width="'+z+'" height="'+z+'" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(ICP[n]||'')+'</svg>'}
 var LGN=0;
 function logoH(o){o=o||{};var g='lg'+(++LGN),t=o.dark?'#12263F':'#F5F7FA';
@@ -411,10 +493,10 @@ function nav(){
 function avH(){return avE(U,'')+'<em>▾</em>'}
 function setMenu(){$('pb').innerHTML=avH();$('cta').style.display=U?'none':'';
  var dk=curTheme()==='dark',h='<div class="pr"><span class="pri">'+ic(dk?'moon':'sun',18)+(dk?' ডার্ক থিম':' লাইট থিম')+'</span><button class="sw'+(dk?' on':'')+'" id="thb" aria-label="থিম বদলান"><i></i></button></div>';
- if(U)h+='<div class="pu"><b>'+esc(U.name)+'</b>'+(isAdmin()?'<span class="rb">এডমিন</span>':isMod()?'<span class="rb">মোডারেটর</span>':'')+'<small>'+esc(U.email||'')+'</small></div><button data-v="profile">'+ic('user',18)+' আমার প্রোফাইল</button><button data-v="report">'+ic('chart',18)+' লার্নিং রিপোর্ট</button><button data-v="books">'+ic('book',18)+' বই</button>'+(isStaff()?'<button data-v="admin">'+ic('shield',18)+' এডমিন প্যানেল</button>':'')+'<button data-m="out">'+ic('out',18)+' লগআউট</button>';
+ if(U)h+='<div class="pu"><b>'+esc(U.name)+'</b>'+(isAdmin()?'<span class="rb">এডমিন</span>':isMod()?'<span class="rb">মোডারেটর</span>':'')+'<small>'+esc(U.email||'')+'</small></div><button data-v="profile">'+ic('user',18)+' আমার প্রোফাইল</button><button data-v="report">'+ic('chart',18)+' লার্নিং রিপোর্ট</button><button data-v="clsn">'+ic('course',18)+' ভিডিও ক্লাস</button><button data-v="books">'+ic('book',18)+' বই</button>'+(isStaff()?'<button data-v="admin">'+ic('shield',18)+' এডমিন প্যানেল</button>':'')+'<button data-m="out">'+ic('out',18)+' লগআউট</button>';
  else h+='<button data-m="login">'+ic('in',18)+' লগইন</button><button data-m="reg">'+ic('plus',18)+' অ্যাকাউন্ট খুলুন</button><button data-v="books">'+ic('book',18)+' বই</button>';
  h+='<button data-m="search">'+ic('search',18)+' খুঁজুন</button>';$('pd').innerHTML=h}
-function foot(){var wl='https://wa.me/88'+CFG.wa;$('fw').href=wl;$('fw').textContent=CFG.wa;$('fh').textContent=CFG.wa;$('sf').href=CFG.fb;$('sy').href=CFG.yt;$('sw2').href=wl;$('fab').href=wl;$('fn').textContent='© '+new Date().getFullYear()+' '+CFG.name+'। সর্বস্বত্ব সংরক্ষিত।';$('fbn').innerHTML=logoH({sub:1});document.title=CFG.name}
+function foot(){var wl='https://wa.me/88'+CFG.wa;$('fw').href=wl;$('fw').textContent=CFG.wa;$('fh').textContent=CFG.wa;$('sf').href=CFG.fb;$('sy').href=CFG.yt;$('sw2').href=wl;$('fab').href=wl;[['apG','playStore'],['apA','appStore'],['apM','msStore']].forEach(function(x){var el=$(x[0]);if(!el)return;var u=CFG[x[1]];if(u){el.href=u;el.target='_blank';el.rel='noopener'}else{el.style.display='none'}});$('fn').textContent='© '+new Date().getFullYear()+' '+CFG.name+'। সর্�্বস্বত্ব সংরক্ষিত।';$('fbn').innerHTML=logoH({sub:1});document.title=CFG.name}
 function meshY(c,r){return 232-r*r*1.35-r*5-Math.sin(c*.45+r*.7)*(6+r*2.2)-Math.cos(c*.18-r*.4)*(4+r*1.2)}
 function mesh(){var C=44,R=12,p='',r,c,pts;for(r=0;r<R;r++){pts=[];for(c=0;c<=C;c++)pts.push((c*1600/C).toFixed(0)+','+meshY(c,r).toFixed(0));p+='<polyline points="'+pts.join(' ')+'"/>'}
 for(c=0;c<=C;c+=2){pts=[];for(r=0;r<R;r++)pts.push((c*1600/C).toFixed(0)+','+meshY(c,r).toFixed(0));p+='<polyline points="'+pts.join(' ')+'"/>'}$('fm').innerHTML=p}
@@ -436,7 +518,7 @@ function modal(h){$('md').innerHTML=h;$('ov').classList.add('on')}
 var TI=0;function closeM(){EXON=0;clearInterval(TI);$('ov').classList.remove('on')}
 $('ov').onclick=function(e){if(e.target===this)closeM()};
 /* সাইটের কনটেন্ট (Firestore) */
-var CV=3;var KEYS=['name','wa','fb','yt','homeVideo','bkash','nagad','price','trialDays','courses'];
+var CV=3;var KEYS=['name','wa','fb','yt','homeVideo','bkash','nagad','price','trialDays','courses','playStore','appStore','msStore'];
 function applyContent(j){try{var c=JSON.parse(j);if(c.cfg)KEYS.forEach(function(k){if(c.cfg[k]!==undefined&&!(k==='name'&&c.cfg[k]==='ডুয়েট ভর্তি প্রস্তুতি (Updated)'))CFG[k]=c.cfg[k]});if(c.books&&c.books.length&&(c.v||0)>=CV)D=c.books;fixK()}catch(e){}}
 function saveSite(msg){var cf={};KEYS.forEach(function(k){cf[k]=CFG[k]});
 return FB.d.collection('site').doc('content').set({json:JSON.stringify({v:CV,cfg:cf,books:D}),at:Date.now()}).then(function(){foot();if($('am'))$('am').textContent=msg||'সেভ হয়েছে।';$('am')&&($('am').style.color='var(--ok)')}).catch(function(){if($('am')){$('am').textContent='সেভ হয়নি। এডমিন ইমেইল ও Firestore Rules ঠিক আছে কি না দেখুন।';$('am').style.color='var(--bad)'}})}
@@ -571,7 +653,8 @@ if(v==='home'){h=homeH()}
 else if(v==='books')h='<section><div class="w"><h2>বই</h2><p class="sb">একটি বই বেছে নিন।</p><div class="gd">'+D.map(function(s,i){return '<button class="sc rv" data-a="bk" data-i="'+i+'"><b>'+esc(s.n)+'</b><span>'+esc(s.d||'')+'</span><br><span>'+bn(s.ch.length)+'টি অধ্যায়</span></button>'}).join('')+'</div></div></section>';
 else if(v==='book'){var s=D[x];h='<section><div class="w"><button class="back" data-a="go" data-v="books">← সব বই</button><h2>'+esc(s.n)+'</h2><p class="sb">'+esc(s.d||'')+'</p>'+s.ch.map(function(c,j){return '<div class="ch"><h3>'+bn(j+1)+'. '+esc(c.t)+'</h3><div class="row"><button class="bt sm g" data-a="n" data-i="'+x+'" data-c="'+j+'">নোট ডাউনলোড</button>'+(c.pdf?'<button class="bt sm g" data-a="pdf" data-i="'+x+'" data-c="'+j+'">📄 PDF নোট</button>':'')+(c.v&&c.v.length?c.v.map(function(v2){return '<a class="bt sm g" target="_blank" rel="noopener" href="'+esc(v2[1])+'">▶ '+esc(v2[0])+'</a>'}).join(''):'<a class="bt sm g" target="_blank" rel="noopener" href="'+esc(CFG.yt)+'/search?query='+encodeURIComponent(c.t)+'">ভিডিও খুঁজুন</a>')+'<button class="bt sm" data-a="e" data-i="'+x+'" data-c="'+j+'" data-t="m">এমসিকিউ</button><button class="bt sm" data-a="e" data-i="'+x+'" data-c="'+j+'" data-t="c">সিকিউ</button></div></div>'}).join('')+'</div></section>'}
 else if(v==='mcq')h=listH('m');else if(v==='cq')h=listH('c');
-else if(v==='course')h='<section><div class="w"><h2>কোর্স</h2><p class="sb">ভিডিও কোর্স ও ক্লাসের লিংক।</p><div class="gd">'+CFG.courses.map(function(c){return '<a class="sc rv" style="text-decoration:none" target="_blank" rel="noopener" href="'+esc(c[1])+'"><b>'+esc(c[0])+'</b><span>'+esc(c[2]||'')+' ▶</span></a>'}).join('')+D.map(function(s){return '<a class="sc rv" style="text-decoration:none" target="_blank" rel="noopener" href="'+esc(CFG.yt)+'/search?query='+encodeURIComponent(s.n)+'"><b>'+esc(s.n)+'</b><span>চ্যানেলের ভিডিও খুঁজুন ▶</span></a>'}).join('')+'</div></div></section>';
+else if(v==='course')h='<section><div class="w"><h2>কোর্স</h2><p class="sb">ভিডিও কোর্স ও ক্লাসের লিংক। অধ্যায় ধরে ভিডিও দেখতে নিচের "ভিডিও ক্লাস শুরু করুন" চাপুন।</p><div class="gd"><button class="sc rv" data-a="cls" data-b="0" data-c="0" style="grid-column:1/-1;max-width:520px"><b>🎬 ভিডিও ক্লাস শুরু করুন</b><span>অধ্যায় ধরে ভিডিও, সিলেবাস ও প্রগ্রেস</span></button>'+CFG.courses.map(function(c){return '<a class="sc rv" style="text-decoration:none" target="_blank" rel="noopener" href="'+esc(c[1])+'"><b>'+esc(c[0])+'</b><span>'+esc(c[2]||'')+' ▶</span></a>'}).join('')+D.map(function(s){return '<a class="sc rv" style="text-decoration:none" target="_blank" rel="noopener" href="'+esc(CFG.yt)+'/search?query='+encodeURIComponent(s.n)+'"><b>'+esc(s.n)+'</b><span>চ্যানেলের ভিডিও খুঁজুন ▶</span></a>'}).join('')+'</div></div></section>';
+else if(v==='clsn'){h=courseH()}
 else if(v==='profile'){h=profH()}
 else if(v==='admin'){h=isStaff()?adminH():'<section><div class="w"><h2>এডমিন</h2><p class="sb">শুধু এডমিন ও মোডারেটরদের জন্য।</p></div></section>'}else if(v==='privacy'){h=privH()}else if(v==='terms'){h=termsH()}else if(v==='report'){h=reportH()}
 a.innerHTML=h;a.querySelectorAll('.rv').forEach(function(e){io.observe(e)});bindPay();if(v==='admin'&&isStaff()){edR();loadPay();loadReq();ntAL();if(isAdmin())loadUsers()}afterShow(v)}
@@ -587,7 +670,7 @@ window.addEventListener('appinstalled',function(){$('ins').style.display='none'}
 function rec(oks){if(!U)return;var h=ld('dtd_h_'+U.id)||[],m={};L.qs.forEach(function(q,i){var k=L.qc[i];m[k]=m[k]||[0,0];m[k][1]++;if(oks[i])m[k][0]++});Object.keys(m).forEach(function(k){h.push({b:L.s.n,c:k,t:L.t,s:m[k][0],n:m[k][1],at:Date.now()})});if(h.length>400)h=h.slice(-400);sv('dtd_h_'+U.id,h);var chm={};Object.keys(m).forEach(function(k){chm[ckey(L.s.n+'·'+k)]={s:m[k][0],n:m[k][1]}});actAdd({ex:1,qs:L.qs.length,ok:oks.filter(Boolean).length,ch:chm})}
 /* এডমিন */
 function adminH(){var h='<section><div class="w"><h2>এডমিন প্যানেল</h2><p class="sb">এখান থেকে সাইটের সবকিছু বদলান। সেভ করলেই সবার জন্য বদলে যাবে।</p><div class="er" id="am"></div>'+noticeCard()+'<div class="ch"><h3>সাইট সেটিংস</h3>';
-[['name','সাইটের নাম'],['wa','হোয়াটসঅ্যাপ নম্বর'],['fb','ফেসবুক লিংক'],['yt','ইউটিউব চ্যানেল লিংক'],['homeVideo','হোম পেজের ভিডিও লিংক'],['bkash','বিকাশ নম্বর'],['nagad','নগদ নম্বর'],['price','মাসিক টাকা'],['trialDays','ফ্রি দিনের সংখ্যা']].forEach(function(f){h+='<label>'+f[1]+'<input data-k="'+f[0]+'" value="'+esc(String(CFG[f[0]]))+'"></label>'});
+[['name','সাইটের নাম'],['wa','হোয়াটসঅ্যাপ নম্বর'],['fb','ফেসবুক লিংক'],['yt','ইউটিউব চ্যানেল লিংক'],['homeVideo','হোম পেজের ভিডিও লিংক'],['bkash','বিকাশ নম্বর'],['nagad','নগদ নম্বর'],['price','মাসিক টাকা'],['trialDays','ফ্রি দিনের সংখ্যা'],['playStore','Google Play Store লিংক'],['appStore','App Store লিংক'],['msStore','Microsoft Store লিংক']].forEach(function(f){h+='<label>'+f[1]+'<input data-k="'+f[0]+'" value="'+esc(String(CFG[f[0]]))+'"></label>'});
 h+='<label>কোর্সের লিংক (প্রতি লাইনে: শিরোনাম | লিংক | বিবরণ)<textarea id="ac" rows="4">'+esc(CFG.courses.map(function(x){return x.join(' | ')}).join('\n'))+'</textarea></label><button class="bt sm" data-a="ss">সেটিংস সেভ</button> <button class="bt sm g" data-a="bkp">ব্যাকআপ ডাউনলোড</button></div>';
 h+='<div class="ch"><h3>বই ও অধ্যায়</h3><div id="ed"></div></div><div class="ch"><h3>পেমেন্ট যাচাই</h3><div id="pl2">লোড হচ্ছে...</div></div><div class="ch"><h3>নতুন অ্যাকাউন্টের অনুমোদন</h3><p class="sb" style="margin-bottom:8px">যাদের নম্বরে আগে ফ্রি ট্রায়াল নেওয়া হয়েছে, তারা নতুন অ্যাকাউন্ট খুললে এখানে আসবে।</p><div id="rq">লোড হচ্ছে...</div></div>'+(isAdmin()?usersCard():'')+resetCard()+'</div></section>';return h}
 function edR(){var e=$('ed');if(!e)return;var b=D[AB],h='<label>বই<select id="sb" onchange="AB=+this.value;AC=0;edR()">'+D.map(function(x,i){return '<option value="'+i+'"'+(i===AB?' selected':'')+'>'+esc(x.n)+'</option>'}).join('')+'</select></label>';
@@ -615,7 +698,11 @@ else if(a==='bkp'){var cf={};KEYS.forEach(function(k){cf[k]=CFG[k]});save('ব�
 else if(a==='au'){var id2=b.dataset.id;FB.d.collection('users').doc(id2).update({approved:true,paidUntil:Date.now()+30*864e5}).then(function(){m.textContent='অনুমোদন হয়েছে, ৩০ দিন চালু।';m.style.color='var(--ok)';loadReq()}).catch(function(){m.textContent='অনুমোদন হয়নি, Rules দেখুন।';m.style.color='var(--bad)'})}
 else if(a==='ap'){var id=b.dataset.id,p=PY[id];FB.d.collection('users').doc(p.uid).get().then(function(s){var u=s.data(),np=Math.max(Date.now(),u.paidUntil||0)+30*864e5;return FB.d.collection('users').doc(p.uid).update({paidUntil:np})}).then(function(){return FB.d.collection('payments').doc(id).update({status:'approved'})}).then(function(){m.textContent='অনুমোদন হয়েছে।';m.style.color='var(--ok)';loadPay()}).catch(function(){m.textContent='অনুমোদন হয়নি, Rules দেখুন।';m.style.color='var(--bad)'})}}
 $('app').onclick=function(e){var b=e.target.closest('[data-a]');if(!b)return;var a=b.dataset.a,i=+b.dataset.i,c=+b.dataset.c;
-if(a==='go')show(b.dataset.v);else if(a==='bk')show('book',i);else if(a==='auth')authM(false);else if(a==='reg')authM(true);else if(a==='ed')editM();else if(a==='rpp'){if(RP.off<8){RP.off++;rpR()}}else if(a==='rpx'){if(RP.off>0){RP.off--;rpR()}}else if(a==='lbm'){LBM=b.dataset.m;document.querySelectorAll('[data-a=lbm]').forEach(function(x){x.classList.toggle('g',x!==b)});lbR()}else if(a==='comp')compM();else if(a==='out')logout();
+if(a==='go')show(b.dataset.v,b.dataset.i!==undefined?+b.dataset.i:undefined);else if(a==='bk')show('book',i);else if(a==='auth')authM(false);else if(a==='reg')authM(true);else if(a==='ed')editM();else if(a==='rpp'){if(RP.off<8){RP.off++;rpR()}}else if(a==='rpx'){if(RP.off>0){RP.off--;rpR()}}else if(a==='lbm'){LBM=b.dataset.m;document.querySelectorAll('[data-a=lbm]').forEach(function(x){x.classList.toggle('g',x!==b)});lbR()}else if(a==='comp')compM();else if(a==='out')logout();
+else if(a==='cls'){CV1.bk=+b.dataset.b||0;CV1.ch=+b.dataset.c||0;CV1.ls=+b.dataset.l||0;show('clsn')}
+else if(a==='clg'){var bi2=+b.dataset.b,ci2=+b.dataset.c;var g=b.closest('.clgrp');if(g&&g.classList.contains('open')&&ci2===CV1.ch&&bi2===CV1.bk){g.classList.remove('open');b.setAttribute('aria-expanded','false')}else{CV1.bk=bi2;CV1.ch=ci2;CV1.ls=0;show('clsn')}}
+else if(a==='clc'){var bk2=+b.dataset.b,cj2=+b.dataset.c,lk2=+b.dataset.l;var okd=clToggle(bk2,cj2,lk2);toast(okd?'লেসন সম্পন্ন হিসেবে চিহ্নিত হয়েছে':'চিহ্ন সরানো হয়েছে');show('clsn')}
+else if(a==='rpt'){need(function(){reportIssue()})}
 else if(a==='j'){document.querySelectorAll('.jb').forEach(function(x,k){x.classList.toggle('on',k===i)});$('jt').textContent=JR[i][1];$('pgi').style.width=(i+1)*25+'%'}
 else if(a==='n')need(function(){var ch=D[i].ch[c];if(!ch.nt){modal('<h3>নোট শীঘ্রই আসছে</h3><p>এই অধ্যায়ের নোট এখনো যোগ হয়নি।</p><button class="bt" onclick="closeM()">ঠিক আছে</button>');return}save(ch.t+'-নোট.txt',D[i].n+' / '+ch.t+'\n\n'+ch.nt+'\n\n'+CFG.name)});
 else if(a==='pdf')need(function(){window.open(D[i].ch[c].pdf,'_blank','noopener')});
@@ -662,7 +749,7 @@ function searchM(){modal('<h3>🔍 খুঁজুন</h3><input id="sqi" placeh
 var f=function(){var q=$('sqi').value.trim().toLowerCase(),h='',n=0;if(q)D.forEach(function(b,i){b.ch.forEach(function(c,j){if(n<30&&(b.n+' '+c.t).toLowerCase().indexOf(q)>-1){n++;h+='<button class="mi2" data-i="'+i+'"><b>'+esc(c.t)+'</b><small>'+esc(b.n)+'</small></button>'}})});$('sqr').innerHTML=h||(q?'<p>কিছু পাওয়া যায়নি।</p>':'')};
 $('sqi').oninput=f;$('sqi').focus();$('md').onclick=function(e){var b=e.target.closest('.mi2');if(b){closeM();show('book',+b.dataset.i)}}}
 function countUp(){document.querySelectorAll('.cn').forEach(function(e){var n=+e.dataset.n,t0=null;function f(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/900);e.textContent=bn(Math.round(n*(1-Math.pow(1-p,3))));if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)})}
-function afterShow(v){var a=$('app');a.classList.remove('pt');void a.offsetWidth;a.classList.add('pt');if(v==='home')countUp();if(v==='profile'&&U&&!U.loading){loadLB();actLoad(function(){var e=$('wk');if(e)e.innerHTML=weakH()})}if(v==='report'&&U){rpR();actLoad(rpR)}}
+function afterShow(v){var a=$('app');a.classList.remove('pt');void a.offsetWidth;a.classList.add('pt');if(v==='home')countUp();if(v==='profile'&&U&&!U.loading){loadLB();var pc=$('pcard');if(pc)pc.innerHTML=progCard();actLoad(function(){var e=$('wk');if(e)e.innerHTML=weakH();var p2=$('pcard');if(p2)p2.innerHTML=progCard()})}if(v==='report'&&U){rpR();actLoad(rpR)}}
 function confetti(){if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;var c=document.createElement('canvas');c.style.cssText='position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:99';c.width=innerWidth;c.height=innerHeight;document.body.appendChild(c);var x=c.getContext('2d');if(!x){c.remove();return}var P=[],cl=['#F2C230','#E2136E','#17744B','#3B82F6','#ffffff'];for(var i=0;i<90;i++)P.push({x:innerWidth/2,y:innerHeight/3,vx:(Math.random()-.5)*14,vy:Math.random()*-12-2,s:4+Math.random()*5,c:cl[i%5],r:Math.random()*6});var t=0;(function f(){x.clearRect(0,0,c.width,c.height);P.forEach(function(p){p.vy+=.35;p.x+=p.vx;p.y+=p.vy;p.r+=.2;x.save();x.translate(p.x,p.y);x.rotate(p.r);x.fillStyle=p.c;x.fillRect(-p.s/2,-p.s/2,p.s,p.s*.6);x.restore()});if(++t<110)requestAnimationFrame(f);else c.remove()})()}
 if(matchMedia('(hover:hover)').matches&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
 $('app').addEventListener('mousemove',function(e){var c=e.target.closest('.sc,.fxc');if(!c)return;var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(700px) rotateY('+x*8+'deg) rotateX('+(-y*8)+'deg) translateY(-4px)'});
@@ -696,7 +783,7 @@ if(mv)mv.innerHTML=(rank>=0&&rank<10)?'<div class="mv win"><b>🎉 অভিন�
 function profH(){if(!U)return '<section><div class="w"><h2>প্রোফাইল</h2><p class="sb">প্রোফাইল দেখতে লগইন করুন।</p><button class="bt" data-a="auth">লগইন / অ্যাকাউন্ট খুলুন</button></div></section>';
 var st=access()?'<div class="ch"><h3>অ্যাকাউন্ট চালু আছে</h3>'+(isAdmin()?'এডমিন':isMod()?'মোডারেটর':Date.now()<(U.paidUntil||0)?'পেইড সদস্য, মেয়াদ: '+new Date(U.paidUntil).toLocaleDateString('bn-BD'):'ফ্রি সময় বাকি: '+bn(daysLeft())+' দিন')+'</div>':payH();
 var tabs=[['c','সেরা পারফর্মার'],['e','সবচেয়ে বেশি পরীক্ষা'],['a','সর্বোচ্চ সঠিকতা']].map(function(x){return '<button class="bt sm'+(x[0]===LBM?'':' g')+'" data-a="lbm" data-m="'+x[0]+'">'+x[1]+'</button>'}).join('');
-return '<section><div class="w"><div class="pf"><span>'+avE(U,'big')+'</span><div><h2 style="margin:0">'+esc(U.name)+(isAdmin()?'<span class="rb">এডমিন</span>':isMod()?'<span class="rb">মোডারেটর</span>':'')+'</h2><p class="sb" style="margin:4px 0">'+esc(U.email||'')+'<br>হোয়াটসঅ্যাপ: '+(U.wa?esc(U.wa):'<i>এখনো যোগ করা হয়নি</i>')+(U.inst?'<br>🎓 '+esc(U.inst):'')+'</p></div></div><div class="row" style="margin:0 0 14px"><button class="bt sm" data-a="ed">✏️ প্রোফাইল সম্পাদনা</button><button class="bt sm g" data-a="go" data-v="report">'+ic('chart',16)+' লার্নিং রিপোর্ট</button>'+(U.incomplete&&!U.loading?'<button class="bt sm g" data-a="comp">হোয়াটসঅ্যাপ নম্বর যোগ করুন</button>':'')+'</div>'+(U.loading?'':st)+'<div id="mys"></div><div id="wk">'+weakH()+'</div><div class="ch"><h3>🏆 এই মাসের লিডারবোর্ড</h3><p class="sb" style="margin:0 0 8px">যোগ্যতা: কমপক্ষে ৫টি প্রশ্নের পরীক্ষা। "সর্বোচ্চ সঠিকতা" তালিকায় কমপক্ষে ২০টি প্রশ্নের উত্তর লাগে।</p><div class="row" style="margin:0 0 8px">'+tabs+'</div><div id="lb">লোড হচ্ছে...</div></div><div id="mvb"></div><div class="row"><button class="bt g" data-a="out">লগআউট</button></div></div></section>'}
+return '<section><div class="w"><div class="pf"><span>'+avE(U,'big')+'</span><div><h2 style="margin:0">'+esc(U.name)+(isAdmin()?'<span class="rb">এডমিন</span>':isMod()?'<span class="rb">মোডারেটর</span>':'')+'</h2><p class="sb" style="margin:4px 0">'+esc(U.email||'')+'<br>হোয়াটসঅ্যাপ: '+(U.wa?esc(U.wa):'<i>এখনো যোগ করা হয়নি</i>')+(U.inst?'<br>🎓 '+esc(U.inst):'')+'</p></div></div><div class="row" style="margin:0 0 14px"><button class="bt sm" data-a="ed">✏️ প্রোফাইল সম্পাদনা</button><button class="bt sm g" data-a="go" data-v="report">'+ic('chart',16)+' লার্নিং রিপোর্ট</button>'+(U.incomplete&&!U.loading?'<button class="bt sm g" data-a="comp">হোয়াটসঅ্যাপ নম্বর যোগ করুন</button>':'')+'</div>'+(U.loading?'':st)+'<div id="mys"></div><div class="pcd" style="margin-bottom:16px" id="pcard"></div><div id="wk">'+weakH()+'</div><div class="ch"><h3>🏆 এই মাসের লিডারবোর্ড</h3><p class="sb" style="margin:0 0 8px">যোগ্যতা: কমপক্ষে ৫টি প্রশ্নের পরীক্ষা। "সর্বোচ্চ সঠিকতা" তালিকায় কমপক্ষে ২০টি প্রশ্নের উত্তর লাগে।</p><div class="row" style="margin:0 0 8px">'+tabs+'</div><div id="lb">লোড হচ্ছে...</div></div><div id="mvb"></div><div class="row"><button class="bt g" data-a="out">লগআউট</button></div></div></section>'}
 
 /* ===== ধাপ ৩: কার্যক্রম (users/{uid}/activity), সময় ট্র্যাকিং, লার্নিং রিপোর্ট ===== */
 var ACT={days:{},pend:{}},LI=Date.now(),EXON=0,RP={off:0,rng:7},AL='';
@@ -807,6 +894,144 @@ return false}
 
 var cc;try{cc=localStorage.getItem('dtd_content')}catch(e){}if(cc)applyContent(cc);var cp0=ld('dtd_prof');if(CFG.firebase.apiKey&&cp0)setU(cp0);
 hdr();mesh();foot();setMenu();nav();show('home');
+/* ===== ধাপ ৪: কোর্স লার্নিং পেজ — ডেটা ও ফাংশন ===== */
+/* কোর্সের অধ্যায়-ভিত্তিক ভিডিও ডেটা: অ্যাডমিন প্যানেল থেকে CFG.videos দিয়ে সেভ হয় */
+var CV1={bk:0,ch:0,ls:0}; /* বর্তমান বই/অধ্যায়/লেসন সূচক */
+function courseLessons(bi,ci){ /* নির্বাচিত অধ্যায়ের লেসন তালিকা বানায় */
+ var b=D[bi];if(!b)return[];
+ var c=b.ch[ci];if(!c)return[];
+ var out=[];
+ (c.v||[]).forEach(function(v,i){out.push({t:v[0]||('লেসন '+(i+1)),u:v[1]||'',d:'',dur:0})});
+ if(!out.length){ /* ভিডিও না থাকলে অধ্যায়ের নোট/পরীক্ষা থেকে লেসন বানাও */
+  out.push({t:c.t||'অধ্যায়',u:'',d:c.nt||'',dur:0,note:true});
+ }
+ return out;
+}
+function ytId(u){ /* ইউটিউব লিংক থেকে ভিডিও আইডি বের করে */
+ if(!u)return'';
+ var m=u.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|live\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/);
+ return m?m[1]:'';
+}
+function ytEmb(u){ /* youtube-nocookie এমবেড ইউরল বানায় */
+ var id=ytId(u);if(!id)return'';
+ return 'https://www.youtube-nocookie.com/embed/'+id+'?rel=0&modestbranding=1';
+}
+function courseH(){ /* কোর্স লেসন পেজের HTML */
+ if(!D.length)return'<section><div class="w"><h2>কোর্স</h2><p class="sb">এখনো কোনো অধ্যায় যোগ করা হয়নি।</p></div></section>';
+ var bi=CV1.bk,ci=CV1.ch;
+ if(bi>=D.length)bi=0; if(!D[bi].ch.length)bi=0;
+ if(ci>=D[bi].ch.length)ci=0;
+ var b=D[bi],ls=courseLessons(bi,ci),cur=CV1.ls;
+ if(cur>=ls.length)cur=0;
+ var L=ls[cur];
+ var done=clDone();
+ /* সিলেবাস: সব অধ্যায়ের লেসন */
+ var groups=b.ch.map(function(c,j){var l=courseLessons(bi,j);return{t:c.t,n:l.length,idx:j,done:(done['b'+bi+'c'+j]||0)}});
+ var totD=0;for(var k in done)totD++;
+ var total=0;groups.forEach(function(g){total+=g.n});
+ var pct=total?Math.round(totD/total*100):0;
+ var h='<section><div class="w"><button class="back" data-a="go" data-v="course">'+ic('left',16)+' সব কোর্স</button>';
+ h+='<h2>'+esc(b.n)+' · '+esc(b.ch[ci].t)+'</h2>';
+ h+='<div class="row" style="margin:0 0 14px">'+D.map(function(x,i){return '<button class="bt sm'+(i===bi?' g':'')+'" data-a="cls" data-b="'+i+'" data-c="0">'+esc(x.n)+'</button>'}).join('')+'</div>';
+ h+='<p class="sb">ভিডিও দেখুন, নোট পড়ুন এবং লেসন শেষ হলে সম্পন্ন হিসেবে চিহ্নিত করুন।</p>';
+ h+='<div class="clp"><div>';
+ /* ভিডিও প্লেয়ার */
+ var emb=L.u?ytEmb(L.u):'';
+ if(emb)h+='<div class="clv"><iframe src="'+esc(emb)+'" title="'+esc(L.t)+'" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>';
+ else h+='<div class="clv"><div class="clvb">'+ic('course',44)+'<b>এই লেসনে ভিডিও নেই</b><span>নোট পড়ুন ও পরীক্ষা দিন, অথবা ইউটিউবে খুঁজুন।</span><a class="bt sm" target="_blank" rel="noopener" href="'+esc(CFG.yt)+'/search?query='+encodeURIComponent(L.t)+'">'+ic('play',16)+' ইউটিউবে খুঁজুন</a></div></div>';
+ /* লেসনের বিবরণ ও অ্যাকশন */
+ h+='<div class="clvd"><h3>'+bn(cur+1)+'. '+esc(L.t)+'</h3>';
+ h+='<p>'+esc(L.d||b.ch[ci].nt||'এই লেসনের বিবরণ এখনো যোগ করা হয়নি।')+'</p>';
+ h+='<div class="clvact">';
+ h+='<button class="bt sm g" data-a="n" data-i="'+bi+'" data-c="'+ci+'">'+ic('download',16)+' নোট ডাউনলোড</button>';
+ h+='<button class="bt sm g" data-a="e" data-i="'+bi+'" data-c="'+ci+'" data-t="m">'+ic('mcq',16)+' এমসিকিউ</button>';
+ h+='<button class="bt sm g" data-a="e" data-i="'+bi+'" data-c="'+ci+'" data-t="c">'+ic('cq',16)+' সিকিউ</button>';
+ h+='<button class="bt sm g" data-a="rpt">'+ic('flag',16)+' সমস্যা জানান</button>';
+ h+='</div></div>';
+ /* শেষ/পরের লেসন */
+ h+='<div class="clnav">';
+ h+='<button class="bt g" data-a="cls" data-d="-1"'+(cur>0?'':' disabled style="opacity:.45"')+'>'+ic('left',16)+' আগের লেসন</button>';
+ h+='<button class="bt" data-a="clc" data-b="'+bi+'" data-c="'+ci+'" data-l="'+cur+'">'+ic('check',16)+' সম্পন্ন হিসেবে চিহ্নিত করুন</button>';
+ h+='<button class="bt g" data-a="cls" data-d="1"'+(cur<ls.length-1?'':' disabled style="opacity:.45"')+'>পরের লেসন '+ic('right',16)+'</button>';
+ h+='</div></div>';
+ /* সিলেবাস সাইডবার */
+ h+='<aside class="cly"><div class="clyh"><h3>কোর্স সিলেবাস</h3><p>'+esc(b.n)+' · অধ্যায় ধরে ভিডিও</p>';
+ h+='<div class="clyp"><span>সম্পন্ন</span><b>'+bn(pct)+'%</b></div><div class="clpg"><i style="width:'+pct+'%"></i></div></div>';
+ h+='<div class="clyl">';
+ groups.forEach(function(g,j){
+  var open=j===ci;
+  h+='<div class="clgrp'+(open?' open':'')+'">';
+  h+='<button class="clgt" data-a="clg" data-b="'+bi+'" data-c="'+j+'" aria-expanded="'+(open?'true':'false')+'"><b>'+bn(j+1)+'. '+esc(g.t)+'</b><em>'+bn(g.done)+'/'+bn(g.n)+'</em><span class="car">'+ic('right',16)+'</span></button>';
+  h+='<div class="clgl">';
+  if(g.n){courseLessons(bi,j).forEach(function(l,k){
+   var kk='b'+bi+'c'+j+'l'+k,dn=done[kk]?1:0,sel=(j===ci&&k===cur);
+   h+='<button class="clli'+(sel?' on':'')+(dn?' done':'')+'" data-a="cll" data-b="'+bi+'" data-c="'+j+'" data-l="'+k+'">';
+   h+='<span class="clst">'+ic(dn?'check':'play',13)+'</span><b>'+esc(l.t)+'</b>';
+   h+='<span class="cllk">'+ic('clock',13)+'</span></button>';
+  })}
+  else h+='<div style="padding:8px 14px;color:var(--mu);font-size:14px">এই অধ্যায়ে এখনো লেসন যোগ হয়নি।</div>';
+  h+='</div></div>';
+ });
+ h+='</div></aside></div></div></section>';
+ return h;
+}
+/* লেসন সম্পন্নের অবস্থা (লোকাল + ফায়ারবেস) */
+function clKey(){return 'dtd_cl_'+(U?U.id:'anon')}
+function clDone(){var s=ld(clKey());return s||{}}
+function clSet(k,v){var s=clDone();s[k]=v?1:0;sv(clKey(),s);if(FB&&U){FB.d.collection('users').doc(U.id).set({courseDone:s,at:Date.now()},{merge:true}).catch(function(){})}}
+function clToggle(bi,ci,li){var k='b'+bi+'c'+ci+'l'+li;var s=clDone();s[k]=s[k]?0:1;sv(clKey(),s);if(FB&&U){FB.d.collection('users').doc(U.id).set({courseDone:s,at:Date.now()},{merge:true}).catch(function(){})}return!!s[k]}
+/* ===== ধাপ ৫: প্রগ্রেস কার্ড ===== */
+function reportIssue(){ /* "সমস্যা জানান" — হোয়াটসঅ্যাপে লিংক */
+ var msg='সমস্যা জানাতে চাই: ';
+ if(FB&&U){modal('<h3>'+ic('flag',20)+' সমস্যা জানান</h3><p>আপনার সমস্যাটি লিখুন — আমরা যত দ্রুত সম্ভব ঠিক করব।</p><label>বিবরণ<textarea id="rp2" rows="4" placeholder="কী সমস্যা হয়েছে..."></textarea></label><div class="er" id="rp3"></div><div class="row"><button class="bt" id="rp4">হোয়াটসঅ্যাপে পাঠান</button><button class="bt g" onclick="closeM()">বাতিল</button></div>');
+  $('rp4').onclick=function(){var t=$('rp2').value.trim(),m=$('rp3');if(t.length<5){m.textContent='কিছু লিখুন।';return}
+   var u='https://wa.me/88'+CFG.wa+'?text='+encodeURIComponent(msg+t+'\n\nইমেইল: '+(U.email||''));
+   window.open(u,'_blank','noopener');closeM();toast('হোয়াটসঅ্যাপে পাঠানো হলো')};
+ } else {
+  var u2='https://wa.me/88'+CFG.wa+'?text='+encodeURIComponent(msg);
+  window.open(u2,'_blank','noopener');
+ }
+}
+function progStats(){ /* ডেটা থেকে প্রগ্রেস হিসাব */
+ var nb=D.length,nc=0,nq=0,nm=0;
+ D.forEach(function(b){nc+=b.ch.length;b.ch.forEach(function(c){nm+=(c.mc||[]).length;nq+=(c.cq||[]).length})});
+ var h=ld('dtd_h_'+(U?U.id:''))||[],solved=0,total=0;
+ h.forEach(function(x){solved+=x.s||0;total+=x.n||0});
+ var acc=total?Math.round(solved/total*100):0;
+ return{nb:nb,nc:nc,nm:nm,nq:nq,solved:solved,total:total,acc:acc,exams:h.length};
+}
+function progCard(){ /* প্রগ্রেস কার্ডের HTML */
+ var s=progStats();
+ var ringPct=Math.min(100,s.acc);
+ var C=2*Math.PI*52,off=C*(1-ringPct/100);
+ var h='<div class="pcd"><div class="pring"><svg viewBox="0 0 120 120" aria-hidden="true">';
+ h+='<circle class="bg" cx="60" cy="60" r="52"></circle>';
+ h+='<circle class="fg" cx="60" cy="60" r="52" stroke-dasharray="'+C.toFixed(1)+'" stroke-dashoffset="'+off.toFixed(1)+'"></circle>';
+ h+='</svg><div class="mid"><div><b>'+bn(ringPct)+'%</b><span>সিলেবাস সম্পন্ন</span></div></div></div>';
+ h+='<div class="pcl"><h3>আমার অগ্রগতি</h3><p>আপনার পড়া ও পরীক্ষার অগ্রগতি এক নজরে।</p>';
+ h+='<div class="plst">';
+ h+='<div><b>'+bn(s.nb)+'</b><span>মোট বিষয়</span></div>';
+ h+='<div><b>'+bn(s.nc)+'</b><span>অধ্যায়</span></div>';
+ h+='<div><b>'+bn(s.solved)+'/'+bn(s.total)+'</b><span>প্রশ্ন (সমাধান/মোট)</span></div>';
+ h+='<div><b>'+bn(s.total-s.solved)+'</b><span>বাকি আছে</span></div>';
+ h+='<div><b>'+bn(s.acc)+'%</b><span>সঠিক উত্তরের হার</span></div>';
+ h+='<div><b>'+bn(s.exams)+'</b><span>পরীক্ষা দিয়েছেন</span></div>';
+ h+='</div>';
+ /* কন্টিনিউ বাটন — শেষ অসম্পূর্ণ অধ্যায় */
+ var target=findNextCh();
+ if(target)h+='<button class="bt" data-a="cls" data-b="'+target[0]+'" data-c="'+target[2]+'">'+ic('right',16)+' কন্টিনিউ করো — '+esc(target[1])+'</button>';
+ else h+='<p style="margin:0;color:var(--mu)">চমৎকার! সব অধ্যায় শেষ করেছেন।</p>';
+ h+='</div></div>';
+ return h;
+}
+function findNextCh(){ /* সবচেয়ে কম অনুশীলিত অধ্যায় খুঁজে বের করে */
+ var h=ld('dtd_h_'+(U?U.id:''))||[],m={};
+ h.forEach(function(x){m[x.b+'·'+x.c]=true});
+ var best=null,bn2=1e9;
+ D.forEach(function(b,i){b.ch.forEach(function(c,j){var k=b.n+'·'+c.t;if(!m[k]&&c.mc.length+c.cq.length<bn2){bn2=c.mc.length+c.cq.length;best=[i,b.n+' · '+c.t,j]}})});
+ return best;
+}
+
 </script>
 </body>
 </html>
