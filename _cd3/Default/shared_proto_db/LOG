@@ -1,2 +1,3 @@
-2026/11/19-03:23:26.369 d48 Creating DB D:\personal-use\Plan-website\ডুয়েট-ভর্তি-প্রস্তুতি\_cd3\Default\shared_proto_db since it was missing.
-2026/11/19-03:23:26.388 d48 Reusing MANIFEST D:\personal-use\Plan-website\ডুয়েট-ভর্তি-প্রস্তুতি\_cd3\Default\shared_proto_db/MANIFEST-000001
+2026/11/19-03:55:40.698 41bc Reusing MANIFEST D:\personal-use\Plan-website\ডুয়েট-ভর্তি-প্রস্তুতি\_cd3\Default\shared_proto_db/MANIFEST-000001
+2026/11/19-03:55:40.699 41bc Recovering log #3
+2026/11/19-03:55:40.705 41bc Reusing old log D:\personal-use\Plan-website\ডুয়েট-ভর্তি-প্রস্তুতি\_cd3\Default\shared_proto_db/000003.log 

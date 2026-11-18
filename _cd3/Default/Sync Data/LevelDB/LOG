@@ -1,2 +1,3 @@
-2026/11/19-03:23:26.085 2ad0 Creating DB D:\personal-use\Plan-website\ডুয়েট-ভর্তি-প্রস্তুতি\_cd3\Default\Sync Data\LevelDB since it was missing.
-2026/11/19-03:23:26.108 2ad0 Reusing MANIFEST D:\personal-use\Plan-website\ডুয়েট-ভর্তি-প্রস্তুতি\_cd3\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/11/19-03:55:40.393 46e8 Reusing MANIFEST D:\personal-use\Plan-website\ডুয়েট-ভর্তি-প্রস্তুতি\_cd3\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/11/19-03:55:40.394 46e8 Recovering log #3
+2026/11/19-03:55:40.394 46e8 Reusing old log D:\personal-use\Plan-website\ডুয়েট-ভর্তি-প্রস্তুতি\_cd3\Default\Sync Data\LevelDB/000003.log 

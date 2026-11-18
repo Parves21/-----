@@ -1,0 +1,29 @@
+const {spawn}=require('child_process');
+const http=require('http');
+const fs=require('fs');
+const WebSocket=require('ws');
+const CH='C:/Program Files/Google/Chrome/Application/chrome.exe';
+const DP=9260;
+const UD=process.cwd()+'/_cd5';
+const proc=spawn(CH,['--headless=new','--disable-gpu','--no-sandbox','--disable-extensions','--hide-scrollbars','--remote-debugging-port='+DP,'--user-data-dir='+UD,'--window-size=1401,900','about:blank'],{stdio:'ignore'});
+function get(u){return new Promise(function(res,rej){http.get(u,function(r){var d='';r.on('data',function(c){d+=c;});r.on('end',function(){res(d);});}).on('error',rej);});}
+function sleep(ms){return new Promise(function(r){setTimeout(r,ms);});}
+(async function(){
+  await sleep(2200);
+  var list=JSON.parse(await get('http://127.0.0.1:'+DP+'/json/list'));
+  var page=list.filter(function(x){return x.type==='page';})[0];
+  var ws=new WebSocket(page.webSocketDebuggerUrl);
+  var id=0,waits={};
+  function send(m,p){return new Promise(function(res){var i=++id;waits[i]=res;ws.send(JSON.stringify({id:i,method:m,params:p||{}}));});}
+  ws.on('message',function(m){var o=JSON.parse(m);if(o.id&&waits[o.id]){waits[o.id](o.result);delete waits[o.id];}});
+  await new Promise(function(r){ws.on('open',r);});
+  await send('Page.enable');await send('Runtime.enable');
+  async function ev(code){var r=await send('Runtime.evaluate',{expression:'(function(){'+code+'})()',returnByValue:true,awaitPromise:true});if(r.exceptionDetails)return 'EXC:'+(r.exceptionDetails.exception?r.exceptionDetails.exception.description:r.exceptionDetails.text);return r.result?r.result.value:undefined;}
+  async function shot(f){var r=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:true});fs.writeFileSync(f,Buffer.from(r.data,'base64'));console.log('shot '+f);}
+  await send('Page.navigate',{url:'http://127.0.0.1:8765/index.html'});await sleep(1800);
+  console.log('V0='+await ev('return V'));
+  console.log('loggedOutBooks='+await ev('return $("pd").innerHTML.indexOf("data-v=\\"books\\"")'));
+  await shot('shot_course.png');
+  return;
+  ws.close();proc.kill();process.exit(0);
+})().catch(function(e){console.log('ERR '+e.message);try{proc.kill();}catch(_){}process.exit(0);});
